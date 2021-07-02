@@ -1,0 +1,91 @@
+/* CSS RESETOVANJE */
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+:root {
+  --color-primary: RGB(10, 39, 50);
+  --color-secondary: RGB(23, 124, 125);
+  --white: #ffffff;
+  --black: #000000;
+  --gray1: rgb(219, 219, 219);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* NAV BAR */
+.nav-bar {
+  height: 8rem;
+  background-color: var(--color-primary);
+  font-size: 4rem;
+  color: var(--white);
+  box-shadow: 0 5px 7px -5px #333;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.nav-bar__parts {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .fa-futbol {
+  font-size: 5rem;
+  margin-left: 2rem;
+}
+
+.nav-center {
+  text-align: center;
+}
+/* Jumbo */
+.container-fluid.welcome-text {
+  height: 25rem;
+  background-color: var(--white);
+  color: var(--color-primary);
+}
+
+.welcome-h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  padding: 6rem 0rem;
+}
+
+.welcome-list__items {
+  display: flex;
+}
+
+.welcome-list__item {
+  margin-right: 2rem;
+}
+.welcome-list__item_anc {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--color-secondary);
+  border-radius: 1rem 1rem 0 0;
+  font-size: 1.4rem;
+}
+/* MAIN */
+
+.img-pitch {
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -50;
+  transform: scale(1.1);
+}
