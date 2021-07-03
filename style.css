@@ -14,7 +14,7 @@
   --color-secondary: RGB(23, 124, 125);
   --white: #ffffff;
   --black: #000000;
-  --gray1: rgb(219, 219, 219);
+  --gray1: rgb(240, 240, 240);
 }
 
 html {
@@ -82,6 +82,53 @@ body {
   font-size: 1.4rem;
 }
 /* MAIN */
+
+.main-row {
+  overflow: hidden;
+}
+
+.page-header {
+  height: 8rem;
+  width: 100%;
+  background-color: var(--color-secondary);
+}
+
+.page-header > h2 {
+  color: var(--white);
+  height: 7rem;
+  padding: 1.6rem 4rem;
+  font-size: 3rem;
+}
+.page-text1 {
+  width: 100%;
+  background-color: var(--gray1);
+  color: var(--color-primary);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.paragraf-text1 {
+  margin: 1rem 0;
+}
+.dynamic-info {
+  height: 10rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.players-selected__wrapper {
+}
+.row4 {
+  height: 20rem;
+  width: 20rem;
+  background-color: darkmagenta;
+}
+.row5 {
+  height: 20rem;
+  width: 20rem;
+  background-color: darkolivegreen;
+}
 
 .img-pitch {
   background-repeat: no-repeat;
