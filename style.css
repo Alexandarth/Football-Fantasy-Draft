@@ -37,6 +37,7 @@ body {
 
 .sticky {
   position: sticky;
+  top: 0;
 }
 
 .nav-bar__parts {
@@ -111,28 +112,125 @@ body {
   margin: 1rem 0;
 }
 .dynamic-info {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   text-align: center;
   padding: 2rem 0;
 }
-
-.players-selected__wrapper {
-}
-.row4 {
-  height: 20rem;
-  width: 20rem;
-  background-color: darkmagenta;
-}
-.row5 {
-  height: 20rem;
-  width: 20rem;
-  background-color: darkolivegreen;
+.players-selected__wrapper > h3 {
+  font-size: 2.5rem;
+  height: 100%;
 }
 
-.img-pitch {
+.money-spent__wrapper > h3 {
+  font-size: 2.5rem;
+}
+
+.players-selected__number {
+  font-size: 4rem;
+  color: red;
+}
+
+.money-spent {
+  font-size: 4rem;
+  color: var(--color-primary);
+}
+
+/* CONTENT */
+
+.content-wrapper {
+  background-color: var(--color-primary);
+  background-image: url(images/pitch33.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -50;
-  transform: scale(1.1);
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.content-wrapper ul {
+  font-size: 2.2rem;
+}
+
+.view-selection-wrapper {
+}
+
+.view-selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  text-align: center;
+}
+
+.view-selection li {
+  width: 15%;
+  border: 2px solid #fff;
+}
+
+.view-selection-item {
+  min-width: 15rem;
+  cursor: pointer;
+}
+
+.selected-view {
+  background-color: var(--color-secondary);
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* PITCH VIEW */
+
+.pitch-grid {
+  width: 100%;
+  height: 100rem;
+  color: white;
+}
+
+.row-cols-5 {
+  text-align: center;
+}
+
+.cell-field {
+  border: 1px solid white;
+  width: 12%;
+}
+.row-gk {
+  justify-content: center;
+  height: 100%;
+}
+.row-def {
+  justify-content: center;
+  height: 100%;
+}
+.row-mid {
+  justify-content: center;
+  height: 100%;
+}
+.row-fwd {
+  justify-content: center;
+  height: 100%;
+}
+
+.gk-field {
+  background-color: rgba(92, 42, 92, 0.274);
+}
+.def-field {
+  background-color: rgba(78, 78, 24, 0.514);
+}
+
+.mid-field {
+  background-color: rgba(0, 128, 0, 0.486);
+}
+
+.fwd-field {
+  background-color: rgba(139, 0, 0, 0.507);
+}
+
+.probaa1 {
+  max-width: 100%;
+  max-height: 100%;
 }
